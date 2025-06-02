@@ -1,0 +1,42 @@
+{
+    "name": "emmy/iranian-bank-list-laravel",
+    "description": "list all banks into laravel",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "EmadShirzad\\IranianBank\\": "src/",
+            "EmadShirzad\\IranianBank\\Database\\": "database/",
+            "EmadShirzad\\IranianBank\\Services\\": "Services/",
+            "EmadShirzad\\IranianBank\\Providers\\": "Providers/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Emadshirzad",
+            "email": "shemad2022@gmail.com"
+        }
+    ],
+    "homepage": "https://github.com/EmadShirzad/iranian-bank-list-laravel",
+    "keywords": [
+        "laravel",
+        "iranian",
+        "bank",
+        "list",
+        "filament"
+    ],
+    "require": {
+        "php": ">=8.3",
+        "illuminate/support": "^12.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "EmadShirzad\\IranianBank\\Providers\\IranianBankServiceProvider"
+            ],
+            "aliases": {
+                "IranBank": "EmadShirzad\\IranianBank\\Facades\\IranBank"
+            }
+        }
+    }
+}
