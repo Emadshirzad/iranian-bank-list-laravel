@@ -1,7 +1,6 @@
 {
-    "name": "emmy/iranian-bank-list-laravel",
+    "name": "emadshirzad/iranian-bank-list-laravel",
     "description": "list all banks into laravel",
-    "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
