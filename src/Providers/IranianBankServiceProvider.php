@@ -32,12 +32,8 @@ class IranianBankServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/../database/migrations'                    => database_path('migrations'),
             __DIR__ . '/../database/seeders/IranianBankSeeder.php' => database_path('seeders/IranianBankSeeder.php'),
-        ], 'iranian-bank-migrations');
-        $this->publishes([
-            __DIR__ . '/../Models/IranianBank.php' => app_path('Models/IranianBank.php'),
-        ], 'iranian-bank-model');
-        $this->publishes([
-            __DIR__ . '/../../assets/images' => public_path('vendor/iranian-bank/images'),
-        ], 'assets');
+            __DIR__ . '/../Models/IranianBank.php'                 => app_path('Models/IranianBank.php'),
+            __DIR__ . '/../../assets/images'                       => public_path('vendor/iranian-bank/images'),
+        ], 'iranian-bank-config');
     }
 }

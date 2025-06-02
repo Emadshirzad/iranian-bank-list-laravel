@@ -11,9 +11,8 @@ class IranianBankService
     {
         $banks = IranianBank::all()->toArray();
         foreach ($banks as &$bank) {
-            $bank['bank_logo'] = asset('vendor/iranian-bank-list-filament/images/' . $bank['bank_logo']);
+            $bank['bank_logo'] = asset($bank['bank_logo']);
         }
-
         return $banks;
     }
 
